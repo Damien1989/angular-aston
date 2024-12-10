@@ -1,0 +1,10 @@
+<div>
+    <h2>Liste de chaussures</h2>
+    <ul>
+        @for (shoe of shoes; track $index) {
+            <li>
+                <strong>{{ shoe.name }} </strong> - {{ shoe.price }} euros (Taille : {{ shoe.size }})
+            </li>
+        }
+    </ul>
+</div>
